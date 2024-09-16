@@ -1,0 +1,35 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+nav{
+	background-color: #393E46;
+}
+
+body{
+
+	background-color:#FFD369 ;
+	color: #222831 ;
+}
+
+.card1{
+	width: 18rem;
+}
+#landing{
+	background-color:#FFD369 ;
+	color: #222831 ;
+}
+
+#landingimage{
+	height: 300px ;
+	width: 300px;
+
+}
+#projects{
+	background-color:#EEEEEE ;
+	color: #222831 ;
+}
+
+
+
