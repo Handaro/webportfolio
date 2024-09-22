@@ -24,153 +24,219 @@
 
 
 	<!-- Navbar -->
-	<nav class="navbar navbar-expand-lg  navbar-dark  ps-5">
+	<nav id="nav" class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top ps-6">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#" id="logo"></a>
+			<a class="navbar-link" href="#landing" > <img src="./images/imageme.jpg" id="logo" class="rounded-circle">
+			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse pe-5" id="navbarNav">
 				<div class="navbar-nav ms-auto">
-					<a class="nav-link" href="#">Home</a>
-					<a class="nav-link" href="#">Projects</a>
-					<a class="nav-link" href="#">Contact</a>
-					<a class="nav-link" href="#">Tools</a>
+					<a class="nav-link" href="#landing">Home</a>
+					<a class="nav-link" href="#projects">Projects</a>
+					<a class="nav-link" href="#tools">Contact</a>
+					<a class="nav-link" href="#contact">Tools</a>
 				</div>
 			</div>
 		</nav>
 		<!-- End of Navbar -->
 
         <!-- Landing Page -->
-		<section id ="landing" class="container-fluid">
-		 <div class="row justify-content-md-start justify-content-sm-center py-md-5 my-md-5">
-		<div class="col-md-6 my-1 my-md-0 mx-auto d-flex">
-			<img id="landingimage" src="./images/imageme.jpg" class="rounded-circle img-fluid mx-auto d-block" alt="picture of him">
-		</div>
-		<div class="col-md-6 col-sm-12  mt-md-5 mx-auto d-block text-center" id="text-title">
 
-			
-			<h2>Alejandro Parpan</h2>
-			<h3>Full Stack Web Developer</h3>
-			<p>Welcome to my portfolio! I'm Alejandro, a passionate developer.</p>
-		</div>
-		</div>
-		</section>
+        <section id ="landing" class="text-light">
+        	<div class="container-fluid py-5">
+        		<div class="d-flex justify-content-md-center">
+        		<div id="profile" class="d-none d-md-block "><img src="./images/imageme.jpg" class="img-fluid rounded-circle"></div>
+        		<div class="my-auto ps-5">
+        			<h1 id="title">Alejandro Parpan</h1>
+        			<h2 id="title-base">Full Stack Web Developer</h2>
+        			<p id="title-desc">Welcome to my portfolio! I'm Alejandro, a passionate developer.</p>
+        		</div>
+        		</div>
+        	</div>
+        </section>
 
-		<!-- <section id="projects"></section> -->
+
 
 		<!-- Projects Section -->
+		<section class="contaier-fluid  text-center m-5" id="projects">
+			<h3 id="project-title">My Projects</h3>
 
-		<section id="projects" class="projects-section">
-			<div class="container text-center p-4">
-				<h3>My Projects</h3>
-				<div class="row">
-					<!-- Card1 -->
-					<div class="col-md-4">
-						<div class="card">
-							<img src="..." class="card-img-top" alt="...">
-							<div class="card-body">
-								<h5 class="card-title">Project 1</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-								<a href="#" class="btn btn-primary">Go somewhere</a>
-							</div>
-						</div>
+			<div class="card-group">
+				<div class="card  border-0">
+					<img src="./images/ecommerce.png" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">E-commerce</h5>
+						<p class="card-text">E-commerce, short for electronic commerce, refers to the buying and selling of goods or services over the internet. It involves transactions conducted through online platforms and encompasses a variety of activities and technologies.</p>
 					</div>
-					<div class="col-md-4">
-						<!-- Card2 -->
-						<div class="card">
-							<img src="..." class="card-img-top" alt="...">
-							<div class="card-body">
-								<h5 class="card-title">Project 2</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-								<a href="#" class="btn btn-primary">Go somewhere</a>
-							</div>
-						</div>
+					<div class="card-footer  border-0">
+						<small class="text-body-secondary">Last updated 3 mins ago</small>
 					</div>
-					<!-- Card3 -->
-					<div class="col-md-4">
-						<!-- Card2 -->
-						<div class="card">
-							<img src="..." class="card-img-top" alt="...">
-							<div class="card-body">
-								<h5 class="card-title">Project 3</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-								<a href="#" class="btn btn-primary">Go somewhere</a>
-							</div>
-						</div>
+				</div>
+				<div class="card  border-0">
+					<img src="./images/blog.png" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Blog</h5>
+						<p class="card-text">A blog website is a type of website where an individual or group of people regularly publish articles, opinions, or other written content, often called "posts."</p>
+					</div>
+					<div class="card-footer  border-0">
+						<small class="text-body-secondary">Last updated 3 mins ago</small>
+					</div>
+				</div>
+				<div class="card  border-0">
+					<img src="./images/onlinebookingsystem.png" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Online Booking System</h5>
+						<p class="card-text">An online booking system is a digital platform or software that allows users to book or reserve services, appointments, or resources over the internet. It automates the process of scheduling and managing bookings, making it more convenient for both businesses and customers.</p>
+					</div>
+					<div class="card-footer  border-0">
+						<small class="text-body-secondary">Last updated 3 mins ago</small>
 					</div>
 				</div>
 			</div>
 		</section>
+
 		<!-- End of Project -->
 
+
 		<!-- Tools -->
-		<section id="tools" class="tools-section">
+		<section id="tools" class="tools-section container text-center ">
 
-			<div class="container p-4 text-center">
-				<h2>Tools</h2>
-				<div id="core-tools" class="row my-md-5 py-md-5 justify-content-center ">
-					<!-- Column 1 -->
-					<div class="col-12 col-md-4 my-3 d-flex justify-content-center">
-						<!-- Tools1 -->
-						<h3>Front End</h3>
+			<div class="container p-2">
+        <div class="row" >
+        	<h3>Tools</h3>
+            <div class="col-md-4">
 
-
-					</div>
-					<!-- Column 2 -->
-					<div class="col-12 col-md-4 my-3 d-flex justify-content-center">
-						<h3>Mern</h3>
-
-					</div>
-					<!-- Column 3 -->
-					<div class="col-12 col-md-4 my-3 d-flex justify-content-center">
-						<h3>Other Tools</h3>
-
-					</div>
-				</div>
-			</div>
+                <div class="card border-0">
+                    <div class="border-0">
+                        <h5 class="card-title">Front End</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6 p-2 frontend">
+                                <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" class="img-fluid" alt="HTML5" >
+                            </div>
+                            <div class="col-md-6 p-2 frontend">
+                                <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" class="img-fluid" alt="CSS3" >
+                            </div>
+                            <div class="col-md-6 frontend">
+                                <img src="https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg" class="img-fluid" alt="Bootstrap">
+                            </div>
+                            <div class="col-md-6 frontend">
+                                <img src="https://cdn.worldvectorlogo.com/logos/javascript-1.svg" class="img-fluid" alt="JavaScript" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0">
+                    <div class="">
+                        <h5 class="card-title border-0">MERN</h5>
+                    </div>
+                    <div class="card-body ">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-2.svg" class="img-fluid" alt="MongoDB">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png" class="img-fluid" alt="Express.js">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" class="img-fluid" alt="React">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="https://cdn.worldvectorlogo.com/logos/nodejs-2.svg" alt="Node.js">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0">
+                        <h5 class="card-title">Other Tools</h5>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" class="img-fluid" alt="Git">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="img-fluid" alt="GitHub">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="https://cdn.worldvectorlogo.com/logos/postman.svg" class="img-fluid" alt="postman">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="https://cdn.worldvectorlogo.com/logos/visual-studio-code-1.svg" class="img-fluid" alt="vscode">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 		</section>
 		<!-- End of Tools -->
 
-		<!-- Tools 1 -->
-			<!-- <h3 class="text-center">Core Tools</h3>
-			<div id="photoShop" class="col-12 col-md-4 my-3 d-flex justify-content-center">
-				<img src="./images/Tools_Photoshop-Logo.png" class="img-fluid  ">
-			</div>
-			<div id="corelDraw" class="col-12 col-md-4 my-3 d-flex justify-content-center">
-				<img src="./images/Tools_CorelDraw-Logo.png" class="img-fluid ">
-			</div>
-			<div id="canva" class="col-12 col-md-4 my-3 d-flex justify-content-center">
-				<img src="./images/Tools_Canva-Logo.png" class="img-fluid">
-			</div> -->
+		<!-- Contact Section -->
 
-		<!-- <section id="contact"></section> -->
+     <section class="container-fluid text-center bg-secondary text-light p-3" id="contact">
+        <h3>Contact</h3>
+        <div  class="row d-flex d-inline-flex align-items-center">
+                <div class="col-md-3 contact-logo">
+                    <a href="https://www.facebook.com/awtzweak/" target="_blank"><img id="fb" src="./images/facebook.svg" alt="Facebook"></a>
+                </div>
+                <div class="col-md-3 contact-logo">
+                   <a href="https://ph.linkedin.com/in/alejandro-parpan-656028186" target="_blank"> <img id="linkedin"src="./images/linkedin.svg" alt="LinkedIn"></a>
+                </div>
+                <div class="col-md-3 contact-logo">
+                   <a href="https://github.com/Handaro" target="_blank"> <img id="github" src="./images/github.svg" alt="GitHub"></a>
+                </div>
+                   <div class="col-md-3 contact-logo">
+                    <a href="https://gitlab.com/alejandroportfolio/Alejandroportfolio/-/learn_gitlab" target="_blank"><img id="gitlab" src="./images/gitlab.svg" alt="GitLab"></a>
+                </div>
+                   
+               </div>
+        <div class="row">
+            <div id="contact-img" class="flex-grow-1 d-none d-sm-block col-md-6 my-3">
+              <img src="./images/contact.jpg" class="img-fluid" alt="contact image">
+            </div>
+            <div id="contact-container" class=" col-12 col-md-6 mx-auto p-3">
 
-		 <section id="contact" class="contact-section">
-        <div class="container">
-            <h2 class="text-center">Contact Me</h2>
-            <form>
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" required>
+                <!-- Message Form -->
+                <h3 id="contact-id">Message US</h3>
+
+                <form id="contact-form" class=" container mt-3 collapse show">
+                    <div class="form-group my-4">
+                        <label for="exampleFormControlInput1" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
+                    </div>
+                    <div class="form-group my-4">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="john.doe@mail.com">
+                    </div>
+                    <div class="form-group my-4">
+                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                    	<button id="form-btn" class="custom-button btn-dark w-100" type="button" data-bs-toggle="collapse" data-bs-target="#contact-form, #form-btn2">
+                    		Send
+                    	</button>
+                    </div>
+                </form>
+                <div class="my-5 d-flex justify-content-start">
+                        <button id="form-btn2" class="custom-button collapse btn-dark" data-bs-toggle="collapse" data-bs-target="#contact-form, #form-btn2">Send another message</button>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea class="form-control" id="message" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send</button>
-            </form>
+            </div>
         </div>
     </section>
 
-
-
-
-
+    <footer class="py-2 d-flex justify-content-center bg-dark text-light">
+    
+    	<p class="mb-0">2024 | All rights reserved.</p>
+    </footer>
 
 
 
