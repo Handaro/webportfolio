@@ -17,6 +17,16 @@
 
 	<!-- External CSS -->
 	<link rel="stylesheet" type="text/css" href="./index.css">
+
+    <!-- Emailjs -->
+    <script type="text/javascript">
+    (function(){
+    emailjs.init({
+    publicKey: "5rTCTjYlRDWAXHRht",
+    });
+    })();
+    </script>
+    
 </head>
 <body>
 
@@ -185,70 +195,63 @@
 
 		<!-- Contact Section -->
 
-     <section class="container-fluid text-center bg-secondary text-light p-3" id="contact">
-        <h2>Contact</h2>
-        <div  class="row d-flex d-inline-flex align-items-center">
-                <div class="col-md-3 contact-logo">
-                    <a href="https://www.facebook.com/awtzweak/" target="_blank"><img id="fb" src="./images/facebook.svg" alt="Facebook"></a>
+   <section class="container-fluid text-center bg-secondary text-light p-3" id="contact"> 
+    <h2>Contact</h2>
+    <div class="row d-flex d-inline-flex align-items-center">
+        <!-- Your social media links here -->
+    </div>
+    <div class="row">
+        <div id="contact-img" class="flex-grow-1 d-none d-sm-block col-md-6 my-3">
+            <img src="./images/contact.jpg" class="img-fluid" alt="contact image">
+        </div>
+        <div id="contact-container" class="col-12 col-md-6 mx-auto p-3">
+            <h3 id="contact-id">Message Us</h3>
+            <form id="contact-form" class="container mt-3" action="#" method="POST">
+                <div class="form-group my-4">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="John Doe" required>
                 </div>
-                <div class="col-md-3 contact-logo">
-                   <a href="https://ph.linkedin.com/in/alejandro-parpan-656028186" target="_blank"> <img id="linkedin"src="./images/linkedin.svg" alt="LinkedIn"></a>
+                <div class="form-group my-4">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="john.doe@mail.com" required>
                 </div>
-                <div class="col-md-3 contact-logo">
-                   <a href="https://github.com/Handaro" target="_blank"> <img id="github" src="./images/github.svg" alt="GitHub"></a>
+                <div class="form-group my-4">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
                 </div>
-                   <div class="col-md-3 contact-logo">
-                    <a href="https://gitlab.com/alejandroportfolio/Alejandroportfolio/-/learn_gitlab" target="_blank"><img id="gitlab" src="./images/gitlab.svg" alt="GitLab"></a>
+                <div class="d-flex justify-content-end">
+                    <button id="form-btn" class="custom-button btn-dark w-100" type="submit">
+                        Send
+                    </button>
                 </div>
-                   
-               </div>
-        <div class="row">
-            <div id="contact-img" class="flex-grow-1 d-none d-sm-block col-md-6 my-3">
-              <img src="./images/contact.jpg" class="img-fluid" alt="contact image">
-            </div>
-            <div id="contact-container" class=" col-12 col-md-6 mx-auto p-3">
-
-                <!-- Message Form -->
-                <h3 id="contact-id">Message US</h3>
-
-                <form id="contact-form" class=" container mt-3 collapse show">
-                    <div class="form-group my-4">
-                        <label for="exampleFormControlInput1" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
-                    </div>
-                    <div class="form-group my-4">
-                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="john.doe@mail.com">
-                    </div>
-                    <div class="form-group my-4">
-                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <div class="d-flex justify-content-end">
-                    	<button id="form-btn" class="custom-button btn-dark w-100" type="button" data-bs-toggle="collapse" data-bs-target="#contact-form, #form-btn2">
-                    		Send
-                    	</button>
-                    </div>
-                </form>
-                <div class="my-5 d-flex justify-content-start">
-                        <button id="form-btn2" class="custom-button collapse btn-dark" data-bs-toggle="collapse" data-bs-target="#contact-form, #form-btn2">Send another message</button>
-                </div>
+            </form>
+            <div class="my-5 d-flex justify-content-start">
+                <button id="form-btn2" class="custom-button btn-dark" style="display: none;">Send another message</button>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer class="py-2 d-flex justify-content-center bg-dark text-light">
+<!-- Include EmailJS Script -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<!-- Include Custom EmailJS Handler Script -->
+<script src="emailjs-handler.js"></script>
+
+
+<!-- Footer -->
+ <footer class="py-2 d-flex justify-content-center bg-dark text-light">
     
-    	<p class="mb-0">2024 | All rights reserved.</p>
-    </footer>
+    <p class="mb-0">2024 | All rights reserved.</p>
+ </footer>
 
-
-
+<!-- end of footer -->
 
 
 
 		<!-- Bootstrap JS Script -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 
 	</body>
 	</html>
