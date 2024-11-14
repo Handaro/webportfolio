@@ -21,7 +21,7 @@ nav{
     color: #00FFFF; /* Change text color on hover */
 }
 #title {
-    color: #009999; /* Neon Blue */
+    color: #009999; /* Neon Cyan */
        text-shadow: 
         0 0 3px rgba(0, 153, 153, 0.7),  /* Softer light glow */
         0 0 6px rgba(0, 153, 153, 0.5),  /* Medium glow */
@@ -67,7 +67,10 @@ nav{
 
 /*end of nav*/
 
-
+a {
+  text-decoration: none; /* Removes the underline */
+  color: inherit;        /* Inherit the color from the parent element */
+}
 /*landing*/
 #profile{
 	width: 300px;
