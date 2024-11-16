@@ -3,11 +3,22 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /*Nav*/
 nav{
 	color: black;
 	background-color: transparent;
+}
+#contact {
+  padding-top: 30px; /* Adjust the padding to ensure the section is properly aligned */
+  margin-top: 0;
+  height: 80vh; /* Or adjust based on content height */
+}
+.navbar-nav .nav-link.active {
+    color: #00FFFF !important;  
+    font-weight: bold;
 }
 /* Navbar link styles */
 .nav-link {
@@ -18,28 +29,10 @@ nav{
 
 /* Hover state for navbar links */
 .nav-link:hover {
-    color: #00FFFF; /* Change text color on hover */
-}
-/* Adding neon glow effect using a pseudo-element */
-.nav-link::after {
-    content: ""; /* Empty content for the pseudo-element */
-    position: absolute; /* Positioning relative to the parent */
-    left: 0; /* Align to the left */
-    bottom: 0; /* Align to the bottom */
-    width: 100%; /* Full width */
-    height: 2px; /* Height of the neon line */
-    background-color: rgba(0, 204, 255, 0.7); /* Neon color */
-    transform: scaleX(0); /* Start with no scale */
-    transition: transform 0.3s ease; /* Smooth transition for scaling */
+    color: #00FFFF; 
 }
 
-/* Scale the neon effect on hover */
-.nav-link:hover::after {
-    transform: scaleX(1); /* Scale to full width on hover */
-    box-shadow: 0 0 5px rgba(0, 204, 255, 0.7), /* Neon-like shadow */
-                0 0 10px rgba(0, 204, 255, 0.7),
-                0 0 20px rgba(0, 204, 255, 0.5); /* Adjust these values for intensity */
-}
+
 #logo{
     width: 30px;
     height: 30px;
@@ -78,7 +71,7 @@ nav{
     border-radius: 10px; /* Slightly rounded corners for aesthetic */
 }
 #title {
-    color: #009999; /* Neon Cyan */
+    color: #00FFFF; /* Neon Cyan */
        text-shadow: 
         0 0 3px rgba(0, 153, 153, 0.7),  /* Softer light glow */
         0 0 6px rgba(0, 153, 153, 0.5),  /* Medium glow */
@@ -96,10 +89,13 @@ nav{
 }
 
 a    {
-  text-decoration: none; /* Removes the underline */
-  color: inherit;        /* Inherit the color from the parent element */
+  text-decoration: none; 
+  color: inherit;        
 }
-/*landing*/
+a:hover {
+    color: #00FFFF; /
+}
+
 #profile{
 	width: 300px;
 	height: 300px;
@@ -136,8 +132,6 @@ a    {
     margin: auto; /* Center the images */
     display: block; /* Necessary for centering */
 }
-
-
 .card {
     margin-bottom: 1rem; /* Spacing between cards */
     transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for shadow and scaling */
@@ -150,12 +144,6 @@ a    {
                 0 0 10px rgba(0, 139, 139, 0.5), /* Medium glow */
                 0 0 20px rgba(0, 139, 139, 0.3); /* Fainter glow */
     z-index: 10; /* Bring the hovered card to the front */
-}
-.card-img-top {
-  width: 100%px; /* Fixed width for all images */
-  height: 380px; /* Fixed height for all images */
-  object-fit: fill; /* Ensure images cover the defined area without distortion */
-  border-radius: 5px; /* Optional: Slightly rounded corners for a smoother look */
 }
 
 /*end of card in projects and tools*/
