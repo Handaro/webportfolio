@@ -1,7 +1,7 @@
-*{
-    padding: 0px;
-    margin: 0px;
-
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 /*Nav*/
@@ -20,24 +20,6 @@ nav{
 .nav-link:hover {
     color: #00FFFF; /* Change text color on hover */
 }
-#title {
-    color: #009999; /* Neon Cyan */
-       text-shadow: 
-        0 0 3px rgba(0, 153, 153, 0.7),  /* Softer light glow */
-        0 0 6px rgba(0, 153, 153, 0.5),  /* Medium glow */
-        0 0 9px rgba(0, 153, 153, 0.3);  /* Fainter glow */
-}
-
-#project-title{
-   color: #008B8B; /* Neon Blue */
-}
-.project{
-   color: #008B8B; /* Neon Blue */
-}
-#tools{
-   color: #008B8B; /* Neon Blue */
-}
-
 /* Adding neon glow effect using a pseudo-element */
 .nav-link::after {
     content: ""; /* Empty content for the pseudo-element */
@@ -58,8 +40,6 @@ nav{
                 0 0 10px rgba(0, 204, 255, 0.7),
                 0 0 20px rgba(0, 204, 255, 0.5); /* Adjust these values for intensity */
 }
-
-
 #logo{
     width: 30px;
     height: 30px;
@@ -67,7 +47,55 @@ nav{
 
 /*end of nav*/
 
-a {
+/*landing*/
+/* Neon glow effect for the profile image */
+#profile img {
+   
+    animation: neonGlow 1.5s ease-in-out infinite alternate; /* Original animation timing */
+}
+
+@keyframes neonGlow {
+    0% {
+        box-shadow: 
+            0 0 3px rgba(0, 204, 255, 0.5), 
+            0 0 5px rgba(0, 204, 255, 0.5);
+    }
+    50% {
+        box-shadow: 
+            0 0 6px rgba(255, 255, 255, 0.8), 
+            0 0 10px rgba(0, 204, 255, 0.8); /* Slightly brighter glow */
+    }
+    100% {
+        box-shadow: 
+            0 0 3px rgba(0, 204, 255, 0.5), 
+            0 0 5px rgba(0, 204, 255, 0.5);
+    }
+}
+
+.text-box {
+    background-color: rgba(18, 18, 18, 0.7); /* Dark semi-transparent background */
+    padding: 20px; /* Space inside the box */
+    border-radius: 10px; /* Slightly rounded corners for aesthetic */
+}
+#title {
+    color: #009999; /* Neon Cyan */
+       text-shadow: 
+        0 0 3px rgba(0, 153, 153, 0.7),  /* Softer light glow */
+        0 0 6px rgba(0, 153, 153, 0.5),  /* Medium glow */
+        0 0 9px rgba(0, 153, 153, 0.3);  /* Fainter glow */
+}
+
+#project-title{
+   color: #008B8B; /* Neon Cyan */
+}
+.project{
+   color: #008B8B; 
+}
+#tools{
+   color: #008B8B; 
+}
+
+a    {
   text-decoration: none; /* Removes the underline */
   color: inherit;        /* Inherit the color from the parent element */
 }
@@ -115,12 +143,6 @@ a {
     transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for shadow and scaling */
     position: relative; /* Necessary for z-index to work properly */
 }
-.card-img-top {
-  width: 100%; 
-  height: 460px; 
-  object-fit: fill; /* Ensure images cover the defined area without distortion */
-  border-radius: 5px; /* Optional: Slightly rounded corners for a smoother look */
-}
 
 .card:hover {
     transform: scale(1.05); /* Scale the card to 105% of its original size */
@@ -129,10 +151,23 @@ a {
                 0 0 20px rgba(0, 139, 139, 0.3); /* Fainter glow */
     z-index: 10; /* Bring the hovered card to the front */
 }
+.card-img-top {
+  width: 100%px; /* Fixed width for all images */
+  height: 380px; /* Fixed height for all images */
+  object-fit: fill; /* Ensure images cover the defined area without distortion */
+  border-radius: 5px; /* Optional: Slightly rounded corners for a smoother look */
+}
 
-/*end ofcard in projects and tools*/
+/*end of card in projects and tools*/
 
 /*contact section*/
+.text-box2 {
+    background-color: rgba(18, 18, 18, 0.7); /* Dark semi-transparent background */
+    padding: 20px; /* Space inside the box */
+}
+.form-label{
+    color: #00FFFF;
+}
 .custom-button {
     background-color: #131114; /* Custom color */
     color: white; /* Text color */
@@ -184,35 +219,6 @@ a {
 }
 
 
-/* Neon glow effect for the profile image */
-#profile img {
-   
-    animation: neonGlow 1.5s ease-in-out infinite alternate; /* Original animation timing */
-}
-
-@keyframes neonGlow {
-    0% {
-        box-shadow: 
-            0 0 3px rgba(0, 204, 255, 0.5), 
-            0 0 5px rgba(0, 204, 255, 0.5);
-    }
-    50% {
-        box-shadow: 
-            0 0 6px rgba(255, 255, 255, 0.8), 
-            0 0 10px rgba(0, 204, 255, 0.8); /* Slightly brighter glow */
-    }
-    100% {
-        box-shadow: 
-            0 0 3px rgba(0, 204, 255, 0.5), 
-            0 0 5px rgba(0, 204, 255, 0.5);
-    }
-}
-
-.text-box {
-    background-color: rgba(18, 18, 18, 0.7); /* Dark semi-transparent background */
-    padding: 20px; /* Space inside the box */
-    border-radius: 10px; /* Slightly rounded corners for aesthetic */
-}
-
-
 /*end of contact section*/
+
+
