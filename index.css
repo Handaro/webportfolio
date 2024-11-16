@@ -115,6 +115,12 @@ a {
     transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for shadow and scaling */
     position: relative; /* Necessary for z-index to work properly */
 }
+.card-img-top {
+  width: 100%; 
+  height: 460px; 
+  object-fit: fill; /* Ensure images cover the defined area without distortion */
+  border-radius: 5px; /* Optional: Slightly rounded corners for a smoother look */
+}
 
 .card:hover {
     transform: scale(1.05); /* Scale the card to 105% of its original size */
