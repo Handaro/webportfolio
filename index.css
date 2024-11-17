@@ -2,20 +2,22 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 html {
   scroll-behavior: smooth;
+}
+body{
+     background-color: #fbffff;
+     margin: 0;
+     padding: 0;
 }
 /*Nav*/
 nav{
 	color: black;
 	background-color: transparent;
 }
-#contact {
-  padding-top: 30px; /* Adjust the padding to ensure the section is properly aligned */
-  margin-top: 0;
-  height: 80vh; /* Or adjust based on content height */
-}
+
 .navbar-nav .nav-link.active {
     color: #00FFFF !important;  
     font-weight: bold;
@@ -99,20 +101,14 @@ nav{
 #project-title{
    color: #008B8B; /* Neon Cyan */
 }
-.project{
-   color: #008B8B; 
-}
-#tools{
-   color: #008B8B; 
-}
 
-/*a    {
+a    {
   text-decoration: none; 
   color: inherit;        
 }
 a:hover {
     color: #00FFFF; 
-}*/
+}
 .transparent-button {
   background-color: transparent;
   color: #00FFFF;  /* Set the text color (adjust as needed) */
@@ -139,11 +135,11 @@ a:hover {
 }
 #landing {
     background: 
-    linear-gradient(
-        rgba(0, 0, 0, 0.59),
-        rgba(0, 0, 0, 0.59)
+     linear-gradient(
+        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.3)
         ), 
-    url("./images/background.jpg");
+    url("./images/background.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -152,6 +148,14 @@ a:hover {
 /*end of landing*/
 
 /*card in projects and tools*/
+
+#projects{
+    background-color: #fbffff;
+}
+#tools{
+    background-color:  #fbffff;
+  
+}
 
 .container {
     padding: 1rem; /* Adjust padding as needed */
@@ -185,12 +189,18 @@ a:hover {
 /*end of card in projects and tools*/
 
 /*contact section*/
+#contact {
+  padding-top: 30px; 
+  margin-top: 0;
+  height: 80vh; 
+  background-color: #00ecbc;;
+}
 .text-box2 {
     background-color: rgba(18, 18, 18, 0.7); /* Dark semi-transparent background */
-    padding: 20px; /* Space inside the box */
+  
 }
 .form-label{
-    color: #00FFFF;
+    color: #008B8B;
 }
 .custom-button {
     background-color: #131114; /* Custom color */
