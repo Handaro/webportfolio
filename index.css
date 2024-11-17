@@ -31,7 +31,25 @@ nav{
 .nav-link:hover {
     color: #00FFFF; 
 }
-
+/* Adding neon glow effect using a pseudo-element */
+.nav-link::after {
+    content: ""; /* Empty content for the pseudo-element */
+    position: absolute; /* Positioning relative to the parent */
+    left: 0; /* Align to the left */
+    bottom: 0; /* Align to the bottom */
+    width: 100%; /* Full width */
+    height: 2px; /* Height of the neon line */
+    background-color: rgba(0, 204, 255, 0.7); /* Neon color */
+    transform: scaleX(0); /* Start with no scale */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+/* Scale the neon effect on hover */
+.nav-link:hover::after {
+    transform: scaleX(1); /* Scale to full width on hover */
+    box-shadow: 0 0 5px rgba(0, 204, 255, 0.7), /* Neon-like shadow */
+                0 0 10px rgba(0, 204, 255, 0.7),
+                0 0 20px rgba(0, 204, 255, 0.5); /* Adjust these values for intensity */
+}
 
 #logo{
     width: 30px;
@@ -88,13 +106,31 @@ nav{
    color: #008B8B; 
 }
 
-a    {
+/*a    {
   text-decoration: none; 
   color: inherit;        
 }
 a:hover {
-    color: #00FFFF; /
+    color: #00FFFF; 
+}*/
+.transparent-button {
+  background-color: transparent;
+  color: #00FFFF;  /* Set the text color (adjust as needed) */
+  padding: 10px 20px; /* Adjust padding as necessary */
+  text-decoration: none;  /* Remove underline */
+  border: 2px solid #00FFFF;  /* Set the border color */
+  border-radius: 5px;  /* Round the corners */
+  font-size: 16px;  /* Set the font size */
+  cursor: pointer;  /* Change the cursor to pointer */
+  transition: all 0.3s ease;  /* Smooth transition for hover effects */
 }
+
+.transparent-button:hover {
+  background-color: #00FFFF;  /* Background color on hover */
+  color: white;  /* Change text color on hover */
+  border-color: #0056b3;  /* Darken border on hover */
+}
+
 
 #profile{
 	width: 300px;
