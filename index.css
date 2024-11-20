@@ -149,6 +149,11 @@ a:hover {
 
 /*card in projects and tools*/
 
+.project .card {
+    display: flex;
+    flex-direction: column; /* Ensure the content stretches vertically */
+}
+
 #projects{
     background-color: #fbffff;
 }
